@@ -1,0 +1,316 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+/* CSS Document */
+
+a {
+    color: #9CC0F3;
+}
+
+body {
+    background: white;
+    margin: 0;
+}
+
+.classic-pics {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.classic-pics figcaption{
+    color:#9CC0F3;
+    font-family: "Press Start 2P";
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.contact-form {
+    animation-name: anim3;
+    animation-duration: 2s;
+    display: block;
+    height: 600px;
+    line-height: 2;
+    margin-right: 100px;
+    /* outline: 4px solid blue; */
+    width: 500px;
+    padding: 20px;
+
+}
+
+@keyframes anim3 {
+    from{
+        margin-left: -100%;
+    }
+
+    to {
+       margin-left: 0%;
+    }
+}
+
+#contact-landing-logo {
+    width: 400px;
+}
+
+.landing-logo-box.contact-logo {
+    margin-top: auto;
+    margin-bottom: auto; 
+}
+
+.content-container {
+    background-color: white;
+    height: 150%;
+    
+}
+
+.content {
+    /*background-color: aqua;*/
+    margin: 0% 20% 10% 20%;
+}
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    outline: 10px double #9CC0F3;
+}
+
+
+.content p {
+    text-align: justify;  
+    color: #060823;
+    font-family: 'Quicksand';
+    font-size: 30px;
+    line-height: 1.75;
+}
+
+.content h1 {
+    color: #9CC0F3;
+    font-size: 50px;
+    padding: 20px 0px 20px 0px;
+}
+
+h1 {
+    color: #9CC0F3;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+#header-logo {
+    animation-duration: 1.0s;
+    animation-name: anim1;
+    margin: 0px 10px 0px 10px;
+    width: 300px;
+}
+
+@keyframes anim1 {
+    from {
+      margin-top: -100%;
+      opacity: 0%
+    }
+
+    75% {
+        opacity: 0%
+    }
+  
+    to {
+      margin-top: 0%;
+      opacity: 100%;
+    }
+}
+
+
+.input-block {
+    display: block;
+    padding: 10px;
+}
+
+.input-block input{
+    background-color: #060823;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    height: 25px;
+    margin: 0px 20px 0px 20px;
+    width: 75%;
+    border: 2px solid #9CC0F3;
+ }
+
+.input-block textarea {
+    background-color: #060823;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    width: 75%;
+    border: 2px solid #9CC0F3;
+    margin: 0px 20px 0px 20px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.input-block label {
+    font-family: 'Press Start 2P';
+    font-size: 15px;
+    color: #9CC0F3;
+    margin: 0px 20px 0px 20px;
+}
+
+.landing {
+    background-color: #060823;
+    background-image: url(../img/snow.png);
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 800px;
+    padding-top: 100px;
+}
+
+.landing-contact {
+    background-color: #060823;
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 800px;
+    padding-top: 100px;
+}
+
+#landing-logo {
+    width: 200px;
+}
+
+.landing-logo-box {
+    margin: 50px;
+    /* outline: 2px solid red;*/
+}
+
+.landing-message {
+    margin-bottom: auto;
+    margin-top: auto;
+    /* outline: 2px solid white; */
+    
+}
+
+.landing-message h1 {
+    /* color: #EDC5F6; */
+    animation-name: anim2;
+    animation-duration: 1.0s;
+    color: #060823;
+    font-size: 50px;
+    letter-spacing: 4px;
+    text-shadow: 0px 0px 1.5px #9CC0F3,
+                 0px 0px 1.5px #EDC5F6;
+    transition: all 500ms;
+}
+
+
+
+@keyframes anim2 {
+    from{
+        opacity: 0%;
+        font-size: 0px;
+    }
+
+    to {
+        opacity: 100%;
+        font-size: 50px;
+    }
+}
+
+.landing-message h1:hover {
+    font-size: 55px;
+}
+
+
+.landing-popup {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    /* outline: 2px solid white; */
+    
+}
+
+.nav-container {
+    background: #060823;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    margin: 35px 5px 35px 5px;
+}
+
+nav ul li{
+    color:#9CC0F3;
+    list-style-type: none;
+    margin: 0px 40px 0px 40px;
+    font-family: 'Press Start 2P';
+}
+
+#about {
+    animation-duration: 1.0s;
+    animation-name: anim1;
+}
+
+#art {
+    animation-duration: 1.25s;
+    animation-name: anim1;
+}
+
+#contact {
+    animation-duration: 1.5s;
+    animation-name: anim1;
+}
+
+nav ul li a {
+    color: #9CC0F3;
+}
+
+nav ul li a:hover {
+    color: #EDC5F6;
+}
+
+p {
+    color: white;
+}
+
+.submit-button {
+    width: 75px;
+    height: 75px;
+    margin: 0px 0px 0px 30px;
+    background: transparent;
+    border: none;
+}
+
+
+/* RESPONSIVE MEDIA */
+@media screen and (max-width: 635px) {
+    /*
+    header {
+        height: 200px;
+    }
+    header .desktop {
+        display: none;
+    }
+    header .mobile {
+        display: inline-block;
+    }
+    */
+    section {
+        background: #D9FEAD;
+    }
+}
+
+  

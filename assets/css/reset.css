@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+:root {
+  font-family: 'Fredoka One';
+}
+
+body, 
+body * {
+  margin: unset;
+  box-sizing: unset;
+  padding: unset;
+  font-size: unset;
+  color: unset;
+  text-decoration: unset;
+}
