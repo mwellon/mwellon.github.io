@@ -13,6 +13,20 @@ body {
     margin: 0;
 }
 
+.checkbtn {
+    color: #9CC0F3;
+    float: right;
+    font-size: 40px;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
 .classic-pics {
     margin-top: 75px;
     margin-bottom: 75px;
@@ -24,19 +38,25 @@ body {
     font-family: "Press Start 2P";
     margin-left: 20%;
     margin-right: 20%;
+    line-height: 1.5;
 
+}
+
+.classic-pics img {
+    width: 500px;
 }
 
 .contact-form {
     animation-name: anim3;
     animation-duration: 2s;
     display: block;
-    height: 600px;
-    line-height: 2;
+    height: 800px;
+    line-height: 3;
     margin-right: 100px;
     /* outline: 4px solid blue; */
-    width: 500px;
+    width: 600px;
     padding: 20px;
+    outline: 2px solid yellow;
 
 }
 
@@ -51,7 +71,7 @@ body {
 }
 
 #contact-landing-logo {
-    width: 400px;
+    width: 600px;
 }
 
 .landing-logo-box.contact-logo {
@@ -101,6 +121,7 @@ h1 {
 
 header {
     display: flex;
+    height: 80px;
     justify-content: space-between;
     margin: 0px;
 }
@@ -142,6 +163,7 @@ header {
     margin: 0px 20px 0px 20px;
     width: 75%;
     border: 2px solid #9CC0F3;
+    font-size: 20px;
  }
 
 .input-block textarea {
@@ -153,11 +175,12 @@ header {
     margin: 0px 20px 0px 20px;
     max-height: 200px;
     max-width: 100%;
+    font-size: 20px;
 }
 
 .input-block label {
     font-family: 'Press Start 2P';
-    font-size: 15px;
+    font-size: 20px;
     color: #9CC0F3;
     margin: 0px 20px 0px 20px;
 }
@@ -168,7 +191,7 @@ header {
     background-size: 100% 40%;
     background-repeat: no-repeat;
     background-position: right bottom;
-    height: 800px;
+    height: 100vh;
     padding-top: 100px;
 }
 
@@ -177,7 +200,7 @@ header {
     background-size: 100% 40%;
     background-repeat: no-repeat;
     background-position: right bottom;
-    height: 800px;
+    height: 100%;
     padding-top: 100px;
 }
 
@@ -187,13 +210,13 @@ header {
 
 .landing-logo-box {
     margin: 50px;
-    /* outline: 2px solid red;*/
+    outline: 2px solid red;
 }
 
 .landing-message {
     margin-bottom: auto;
     margin-top: auto;
-    /* outline: 2px solid white; */
+    outline: 2px solid yellow;
     
 }
 
@@ -232,9 +255,11 @@ header {
     display: flex;
     justify-content: center;
     margin: 50px;
-    /* outline: 2px solid white; */
-    
+    outline: 2px solid blue;
+    margin-top: 20vh;
 }
+
+
 
 .nav-container {
     background: #060823;
@@ -242,22 +267,21 @@ header {
     width: 100%;
 }
 
-nav {
-    float: right;
-}
+
 
 nav ul {
-    display: flex;
     float: right;
     margin: 35px 5px 35px 5px;
 }
 
 nav ul li{
+    display: inline-block;
     color:#9CC0F3;
     list-style-type: none;
     margin: 0px 40px 0px 40px;
     font-family: 'Press Start 2P';
 }
+
 
 #about {
     animation-duration: 1.0s;
@@ -282,6 +306,10 @@ nav ul li a:hover {
     color: #EDC5F6;
 }
 
+.navy {
+    background: #060823;
+}
+
 p {
     color: white;
 }
@@ -294,23 +322,324 @@ p {
     border: none;
 }
 
-
 /* RESPONSIVE MEDIA */
-@media screen and (max-width: 635px) {
-    /*
-    header {
-        height: 200px;
+@media screen and (max-width: 1500px) {
+    .landing-popup {
+        margin-top: 10vh;
     }
-    header .desktop {
-        display: none;
+    
+    .contact-form {
+        line-height: 2;
+        height: 600px;
+        width: 500px;
     }
-    header .mobile {
-        display: inline-block;
+
+    #contact-landing-logo {
+        width: 400px;
     }
-    */
-    section {
-        background: #D9FEAD;
+
+    .input-block input{
+        font-size: 20px;
+     }
+    
+    .input-block textarea {
+        font-size: 20px;
+    }
+    
+    .input-block label {
+        font-size: 15px;
+    }
+
+    .landing-popup.contact-popup {
+        margin-top: 10vh;
     }
 }
 
-  
+
+@media screen and (max-width: 1175px) {
+
+    #contact-landing-logo {
+        width: 300px;
+    }
+
+    .landing-logo-box.contact-logo {
+        width: 300px;
+    }
+    .contact-form {
+        margin-right: 0;
+    }
+    
+    .input-block input{
+        width: 90%;
+     }
+    
+    .input-block textarea {
+        width: 90%;
+    }
+
+    .input-block label {
+        margin: 0px 20px 0px 20px;
+        /* outline: 2px solid rgb(195, 124, 197); */
+    }
+    
+}
+
+@media screen and (max-width: 917px) {
+    .landing-popup.contact-popup {
+        display: block;
+    }
+
+    .landing-contact {
+        height: 100%;
+    }
+
+    .contact-form, .landing-logo-box.contact-logo{
+        margin-left: auto;
+        margin-right: auto;
+        animation: anim7 2s;
+    }
+
+    @keyframes anim7 {
+        from{
+            opacity: 0%;
+        }
+    
+        to {
+           opacity: 100%;
+        }
+    }
+    
+    .landing {
+        height: 100vh;
+    }
+    
+    #landing-logo {
+        width: 150px;
+    }
+
+    .landing-message h1 {
+        animation-name: anim4;
+        font-size: 30px;
+    }
+
+    @keyframes anim4 {
+        from{
+            opacity: 0%;
+            font-size: 0px;
+        }
+    
+        to {
+            opacity: 100%;
+            font-size: 30px;
+        }
+    }
+
+    .landing-message h1:hover {
+        font-size: 30px;
+    }
+    
+    .content p {
+        font-size: 25px;
+        line-height: 1.75;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .checkbtn {
+        animation-duration: 1.0s;
+        animation-name: anim1;
+        display: block;
+    }
+    
+    .landing {
+        height: 100vh;
+    }
+
+    #landing-logo {
+        width: 150px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#9CC0F3;
+        top: 45px;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0px;
+        line-height: 10vh;
+    }
+
+    nav ul li a{
+        font-size: 20;
+        color: white;
+    }
+
+    #about {
+        animation-name: none;
+    }
+    
+    #art {
+        animation-name: none;
+    }
+    
+    #contact {
+        animation-name: none;
+    }
+
+    #check:checked ~ ul{
+        top: 45px;
+        left: -5px;
+    }
+
+    .classic-pics img {
+        width: 300px;
+    }
+
+    .content {
+        margin: 0% 10% 10% 10%; 
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .checkbtn {
+        line-height: 2;
+        margin-right: 20px;
+    }
+
+    .content p {
+        font-size: 20px;
+        line-height: 1.75;
+    }
+    
+    .landing {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .landing-popup {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        justify-content: center;
+    }
+
+    #landing-logo {
+        display: block;
+        width: 150px;
+        padding: 0px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-form {
+        margin: none;
+        width: 400px;
+    }
+    
+    .input-block input{
+        width: 100%;
+        margin-left: 0;
+     }
+    
+    .input-block textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .input-block label {
+        margin: 0px 20px 0px 20px;
+        margin-left: 0;
+        /* outline: 2px solid rgb(195, 124, 197); */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #header-logo {
+        width: 200px;
+        margin-top: 15px;
+        margin-left: 20px;;
+    }
+
+    .landing {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background-size: 100% 30%;
+    }
+
+    .landing-message h1 {
+        animation-name: anim5;
+        font-size: 30px;
+    }
+
+    @keyframes anim5 {
+        from{
+            opacity: 0%;
+            font-size: 0px;
+        }
+    
+        to {
+            opacity: 100%;
+            font-size: 30px;
+        }
+    }
+
+    .landing-message h1:hover {
+        font-size: 30px;
+    }
+
+    .landing-popup {
+       margin: 0;
+    }
+
+    .contact-form {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .classic-pics img {
+        width: 200px;
+    }
+    
+    .landing {
+        width: 100vw;
+        height: 100vh;
+        background-size: 100% 30%;
+    }
+
+    #landing-logo {
+        width: 200px;
+    }
+
+    .landing-message h1 {
+        animation-name: anim6;
+        font-size: 30px;
+    }
+
+    @keyframes anim6 {
+        from{
+            opacity: 0%;
+            font-size: 0px;
+        }
+    
+        to {
+            opacity: 100%;
+            font-size: 30px;
+        }
+    }
+}
