@@ -56,7 +56,6 @@ body {
     /* outline: 4px solid blue; */
     width: 600px;
     padding: 20px;
-    outline: 2px solid yellow;
 
 }
 
@@ -71,7 +70,7 @@ body {
 }
 
 #contact-landing-logo {
-    width: 30vw;
+    width: 25vw;
 }
 
 .landing-logo-box.contact-logo {
