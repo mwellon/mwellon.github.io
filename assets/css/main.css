@@ -71,7 +71,7 @@ body {
 }
 
 #contact-landing-logo {
-    width: 600px;
+    width: 30vw;
 }
 
 .landing-logo-box.contact-logo {
@@ -205,18 +205,17 @@ header {
 }
 
 #landing-logo {
-    width: 200px;
+    width: 10vw;
 }
 
 .landing-logo-box {
     margin: 50px;
-    outline: 2px solid red;
+
 }
 
 .landing-message {
     margin-bottom: auto;
     margin-top: auto;
-    outline: 2px solid yellow;
     
 }
 
@@ -224,11 +223,9 @@ header {
     /* color: #EDC5F6; */
     animation-name: anim2;
     animation-duration: 1.0s;
-    color: #060823;
+    color: #9CC0F3;
     font-size: 50px;
     letter-spacing: 4px;
-    text-shadow: 0px 0px 1.5px #9CC0F3,
-                 0px 0px 1.5px #EDC5F6;
     transition: all 500ms;
 }
 
@@ -255,8 +252,11 @@ header {
     display: flex;
     justify-content: center;
     margin: 50px;
-    outline: 2px solid blue;
     margin-top: 20vh;
+}
+
+.landing-popup.contact-popup {
+    margin-top: 10vh;
 }
 
 
